@@ -1,4 +1,4 @@
-# Simple Contact Book Application
+# Contact Book Application
 
 # A list to store contacts
 contacts = []
@@ -10,7 +10,7 @@ def display_contacts():
         print("No contacts found.")
         return
     for index, contact in enumerate(contacts):
-        print(f"{index + 1}. Name: {contact['name']}, Phone: {contact['phone']}")
+        print(f"{index + 1}. Name: {contact['name']}, Phone: {contact['phone']}, Email: {contact['email']}, Address: {contact['address']}")
 
 def add_contact():
     # Add a new contact
@@ -37,7 +37,7 @@ def search_contact():
     if found_contacts:
         print("\n--- Search Results ---")
         for contact in found_contacts:
-            print(f"Name: {contact['name']}, Phone: {contact['phone']}")
+            print(f"Name: {contact['name']}, Phone: {contact['phone']}, Email: {contact['email']}, Address: {contact['address']}")
     else:
         print("No contacts found matching that search term.")
 
